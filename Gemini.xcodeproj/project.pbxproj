@@ -13,6 +13,9 @@
 		A16CD31C1D5C6E4900ACFD6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16CD31A1D5C6E4900ACFD6C /* Main.storyboard */; };
 		A16CD3271D5C6E4900ACFD6C /* GeminiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CD3261D5C6E4900ACFD6C /* GeminiTests.swift */; };
 		A16CD3321D5C6E4900ACFD6C /* GeminiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CD3311D5C6E4900ACFD6C /* GeminiUITests.swift */; };
+		A1D1321E1D5DB6BB008DB717 /* project_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D1321C1D5DB6BB008DB717 /* project_new.png */; };
+		A1D1321F1D5DB6BB008DB717 /* project_save.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D1321D1D5DB6BB008DB717 /* project_save.png */; };
+		A1D132211D5E03B5008DB717 /* ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D132201D5E03B5008DB717 /* ToolBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		A16CD32D1D5C6E4900ACFD6C /* GeminiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeminiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16CD3311D5C6E4900ACFD6C /* GeminiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiUITests.swift; sourceTree = "<group>"; };
 		A16CD3331D5C6E4900ACFD6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1D1321C1D5DB6BB008DB717 /* project_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project_new.png; sourceTree = "<group>"; };
+		A1D1321D1D5DB6BB008DB717 /* project_save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project_save.png; sourceTree = "<group>"; };
+		A1D132201D5E03B5008DB717 /* ToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +101,13 @@
 		A16CD3131D5C6E4900ACFD6C /* Gemini */ = {
 			isa = PBXGroup;
 			children = (
+				A1D1321B1D5DB6BB008DB717 /* assets */,
 				A16CD3141D5C6E4900ACFD6C /* AppDelegate.swift */,
 				A16CD3161D5C6E4900ACFD6C /* ViewController.swift */,
 				A16CD3181D5C6E4900ACFD6C /* Assets.xcassets */,
 				A16CD31A1D5C6E4900ACFD6C /* Main.storyboard */,
 				A16CD31D1D5C6E4900ACFD6C /* Info.plist */,
+				A1D132201D5E03B5008DB717 /* ToolBar.swift */,
 			);
 			path = Gemini;
 			sourceTree = "<group>";
@@ -120,6 +128,15 @@
 				A16CD3331D5C6E4900ACFD6C /* Info.plist */,
 			);
 			path = GeminiUITests;
+			sourceTree = "<group>";
+		};
+		A1D1321B1D5DB6BB008DB717 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1321C1D5DB6BB008DB717 /* project_new.png */,
+				A1D1321D1D5DB6BB008DB717 /* project_save.png */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D1321F1D5DB6BB008DB717 /* project_save.png in Resources */,
+				A1D1321E1D5DB6BB008DB717 /* project_new.png in Resources */,
 				A16CD3191D5C6E4900ACFD6C /* Assets.xcassets in Resources */,
 				A16CD31C1D5C6E4900ACFD6C /* Main.storyboard in Resources */,
 			);
@@ -252,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D132211D5E03B5008DB717 /* ToolBar.swift in Sources */,
 				A16CD3171D5C6E4900ACFD6C /* ViewController.swift in Sources */,
 				A16CD3151D5C6E4900ACFD6C /* AppDelegate.swift in Sources */,
 			);
@@ -475,6 +495,7 @@
 				A16CD3381D5C6E4900ACFD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A16CD3391D5C6E4900ACFD6C /* Build configuration list for PBXNativeTarget "GeminiTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +504,7 @@
 				A16CD33B1D5C6E4900ACFD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A16CD33C1D5C6E4900ACFD6C /* Build configuration list for PBXNativeTarget "GeminiUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +513,7 @@
 				A16CD33E1D5C6E4900ACFD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

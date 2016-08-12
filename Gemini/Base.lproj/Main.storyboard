@@ -672,6 +672,92 @@
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="720"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <splitView fixedFrame="YES" arrangesAllSubviews="NO" dividerStyle="thin" translatesAutoresizingMaskIntoConstraints="NO" id="8B5-Yz-8xp">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="720"/>
+                                <subviews>
+                                    <customView fixedFrame="YES" id="Xc0-jO-qxF">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <subviews>
+                                            <button identifier="btn_project_new" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGf-wo-iOC">
+                                                <rect key="frame" x="10" y="3" width="48" height="32"/>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="project_new" imagePosition="only" alignment="left" imageScaling="proportionallyUpOrDown" inset="2" id="IpO-YH-Pqg">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                            <button identifier="btn_project_save" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEz-yZ-RbQ">
+                                                <rect key="frame" x="57" y="3" width="48" height="32"/>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="project_save" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="3eg-tl-MqJ">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                        </subviews>
+                                    </customView>
+                                    <splitView fixedFrame="YES" arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" id="q9Y-Pa-spV">
+                                        <rect key="frame" x="0.0" y="39" width="1024" height="648.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <subviews>
+                                            <customView fixedFrame="YES" id="YL3-Rg-Qtc">
+                                                <rect key="frame" x="0.0" y="0.0" width="284.5" height="648.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BTS-HY-euJ">
+                                                        <rect key="frame" x="0.0" y="624.5" width="284.5" height="25"/>
+                                                        <buttonCell key="cell" type="roundTextured" title="Sprites" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RPt-dj-Bcl">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                    </button>
+                                                </subviews>
+                                            </customView>
+                                            <openGLView fixedFrame="YES" useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" id="e4r-sB-VOg">
+                                                <rect key="frame" x="285.5" y="0.0" width="478" height="648.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            </openGLView>
+                                            <customView fixedFrame="YES" id="mmw-7z-oYh">
+                                                <rect key="frame" x="764.5" y="0.0" width="259.5" height="648.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <subviews>
+                                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqY-eo-emO">
+                                                        <rect key="frame" x="0.0" y="624.5" width="259.5" height="25"/>
+                                                        <buttonCell key="cell" type="roundTextured" title="Settings" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SPz-iT-rDV">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                    </button>
+                                                </subviews>
+                                            </customView>
+                                        </subviews>
+                                        <holdingPriorities>
+                                            <real value="250"/>
+                                            <real value="250"/>
+                                            <real value="250"/>
+                                        </holdingPriorities>
+                                    </splitView>
+                                    <customView fixedFrame="YES" id="3uG-3T-VFX">
+                                        <rect key="frame" x="0.0" y="688.5" width="1024" height="31.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <subviews>
+                                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6oO-dm-u64">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="31.5"/>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="J4T-QV-Aev">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                        </subviews>
+                                    </customView>
+                                </subviews>
+                                <holdingPriorities>
+                                    <real value="250"/>
+                                    <real value="250"/>
+                                    <real value="250"/>
+                                </holdingPriorities>
+                            </splitView>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -679,4 +765,8 @@
             <point key="canvasLocation" x="75" y="1138"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="project_new" width="38.400001525878906" height="38.400001525878906"/>
+        <image name="project_save" width="102.40000152587891" height="102.40000152587891"/>
+    </resources>
 </document>
