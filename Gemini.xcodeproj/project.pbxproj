@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A14C42CC1D6196EC002E760C /* CustomOpenGLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14C42CB1D6196EC002E760C /* CustomOpenGLView.swift */; };
 		A16CD3151D5C6E4900ACFD6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CD3141D5C6E4900ACFD6C /* AppDelegate.swift */; };
 		A16CD3171D5C6E4900ACFD6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CD3161D5C6E4900ACFD6C /* ViewController.swift */; };
 		A16CD3191D5C6E4900ACFD6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16CD3181D5C6E4900ACFD6C /* Assets.xcassets */; };
@@ -19,8 +20,6 @@
 		A194DCFB1D5F1FD8007FC5E4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A194DCFA1D5F1FD8007FC5E4 /* Settings.storyboard */; };
 		A194DCFE1D5F1FF8007FC5E4 /* Status.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A194DCFC1D5F1FF8007FC5E4 /* Status.storyboard */; };
 		A194DD011D5F271F007FC5E4 /* ToolBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194DD001D5F271F007FC5E4 /* ToolBarViewController.swift */; };
-		A194DD031D5F4618007FC5E4 /* DrawViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194DD021D5F4618007FC5E4 /* DrawViewViewController.swift */; };
-		A194DD061D5F48A9007FC5E4 /* CustomOpenGLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194DD051D5F48A9007FC5E4 /* CustomOpenGLView.swift */; };
 		A1D1321E1D5DB6BB008DB717 /* project_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D1321C1D5DB6BB008DB717 /* project_new.png */; };
 		A1D1321F1D5DB6BB008DB717 /* project_save.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D1321D1D5DB6BB008DB717 /* project_save.png */; };
 		A1D132211D5E03B5008DB717 /* ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D132201D5E03B5008DB717 /* ToolBar.swift */; };
@@ -44,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A14C42CB1D6196EC002E760C /* CustomOpenGLView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOpenGLView.swift; sourceTree = "<group>"; };
 		A16CD3111D5C6E4900ACFD6C /* Gemini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gemini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16CD3141D5C6E4900ACFD6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16CD3161D5C6E4900ACFD6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,8 +62,6 @@
 		A194DCFA1D5F1FD8007FC5E4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		A194DCFD1D5F1FF8007FC5E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Status.storyboard; sourceTree = "<group>"; };
 		A194DD001D5F271F007FC5E4 /* ToolBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBarViewController.swift; sourceTree = "<group>"; };
-		A194DD021D5F4618007FC5E4 /* DrawViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawViewViewController.swift; sourceTree = "<group>"; };
-		A194DD051D5F48A9007FC5E4 /* CustomOpenGLView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOpenGLView.swift; sourceTree = "<group>"; };
 		A1D1321C1D5DB6BB008DB717 /* project_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project_new.png; sourceTree = "<group>"; };
 		A1D1321D1D5DB6BB008DB717 /* project_save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project_save.png; sourceTree = "<group>"; };
 		A1D132201D5E03B5008DB717 /* ToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBar.swift; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				A194DD001D5F271F007FC5E4 /* ToolBarViewController.swift */,
-				A194DD021D5F4618007FC5E4 /* DrawViewViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -165,7 +162,7 @@
 		A194DD041D5F4894007FC5E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A194DD051D5F48A9007FC5E4 /* CustomOpenGLView.swift */,
+				A14C42CB1D6196EC002E760C /* CustomOpenGLView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,11 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14C42CC1D6196EC002E760C /* CustomOpenGLView.swift in Sources */,
 				A194DD011D5F271F007FC5E4 /* ToolBarViewController.swift in Sources */,
 				A1D132211D5E03B5008DB717 /* ToolBar.swift in Sources */,
 				A16CD3171D5C6E4900ACFD6C /* ViewController.swift in Sources */,
-				A194DD031D5F4618007FC5E4 /* DrawViewViewController.swift in Sources */,
-				A194DD061D5F48A9007FC5E4 /* CustomOpenGLView.swift in Sources */,
 				A16CD3151D5C6E4900ACFD6C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

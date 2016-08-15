@@ -15,10 +15,10 @@ class ToolBarViewController: NSViewController {
     @IBOutlet weak var saveButton : NSButton!
     
     @IBAction func newProject(sender: NSButton) {
-        NSLog("newProject")
+        Swift.print("newProject")
     }
     
     @IBAction func saveProject(sender: NSButton) {
-        NSLog("saveProject")
+        Swift.print("saveProject")
     }
 }
