@@ -651,122 +651,106 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Gemini" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="1024" height="720"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="512" height="360"/>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="Qsj-JN-OTF" kind="relationship" relationship="window.shadowedContentViewController" id="JS7-ge-bTe"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <!--Split View Controller-->
+        <scene sceneID="MRD-5y-CTP">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Gemini" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="720"/>
+                <splitViewController id="Qsj-JN-OTF" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="g7v-0y-qTH"/>
+                        <splitViewItem id="xO3-M5-oGI"/>
+                        <splitViewItem id="Pxh-WE-y92"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" id="6KS-NJ-b5f">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <splitView fixedFrame="YES" arrangesAllSubviews="NO" dividerStyle="thin" translatesAutoresizingMaskIntoConstraints="NO" id="8B5-Yz-8xp">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="720"/>
-                                <subviews>
-                                    <customView fixedFrame="YES" id="Xc0-jO-qxF">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <subviews>
-                                            <button identifier="btn_project_new" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGf-wo-iOC">
-                                                <rect key="frame" x="10" y="3" width="48" height="32"/>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="project_new" imagePosition="only" alignment="left" imageScaling="proportionallyUpOrDown" inset="2" id="IpO-YH-Pqg">
-                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                            </button>
-                                            <button identifier="btn_project_save" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEz-yZ-RbQ">
-                                                <rect key="frame" x="57" y="3" width="48" height="32"/>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="project_save" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="3eg-tl-MqJ">
-                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                            </button>
-                                        </subviews>
-                                    </customView>
-                                    <splitView fixedFrame="YES" arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" id="q9Y-Pa-spV">
-                                        <rect key="frame" x="0.0" y="39" width="1024" height="648.5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <subviews>
-                                            <customView fixedFrame="YES" id="YL3-Rg-Qtc">
-                                                <rect key="frame" x="0.0" y="0.0" width="284.5" height="648.5"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <subviews>
-                                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BTS-HY-euJ">
-                                                        <rect key="frame" x="0.0" y="624.5" width="284.5" height="25"/>
-                                                        <buttonCell key="cell" type="roundTextured" title="Sprites" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RPt-dj-Bcl">
-                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                            <font key="font" metaFont="system"/>
-                                                        </buttonCell>
-                                                    </button>
-                                                </subviews>
-                                            </customView>
-                                            <openGLView fixedFrame="YES" useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" id="e4r-sB-VOg">
-                                                <rect key="frame" x="285.5" y="0.0" width="478" height="648.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            </openGLView>
-                                            <customView fixedFrame="YES" id="mmw-7z-oYh">
-                                                <rect key="frame" x="764.5" y="0.0" width="259.5" height="648.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                <subviews>
-                                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqY-eo-emO">
-                                                        <rect key="frame" x="0.0" y="624.5" width="259.5" height="25"/>
-                                                        <buttonCell key="cell" type="roundTextured" title="Settings" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SPz-iT-rDV">
-                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                            <font key="font" metaFont="system"/>
-                                                        </buttonCell>
-                                                    </button>
-                                                </subviews>
-                                            </customView>
-                                        </subviews>
-                                        <holdingPriorities>
-                                            <real value="250"/>
-                                            <real value="250"/>
-                                            <real value="250"/>
-                                        </holdingPriorities>
-                                    </splitView>
-                                    <customView fixedFrame="YES" id="3uG-3T-VFX">
-                                        <rect key="frame" x="0.0" y="688.5" width="1024" height="31.5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <subviews>
-                                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6oO-dm-u64">
-                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="31.5"/>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="J4T-QV-Aev">
-                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                            </button>
-                                        </subviews>
-                                    </customView>
-                                </subviews>
-                                <holdingPriorities>
-                                    <real value="250"/>
-                                    <real value="250"/>
-                                    <real value="250"/>
-                                </holdingPriorities>
-                            </splitView>
-                        </subviews>
-                    </view>
-                </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                    </splitView>
+                    <connections>
+                        <segue destination="gzN-eu-Iyc" kind="relationship" relationship="splitItems" id="XNT-DB-O5c"/>
+                        <segue destination="HO9-nt-AEZ" kind="relationship" relationship="splitItems" id="NEQ-mR-y2S"/>
+                        <segue destination="sec-kM-X0p" kind="relationship" relationship="splitItems" id="OUJ-yI-6vm"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="nr8-c0-LJr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="1138"/>
+            <point key="canvasLocation" x="-395" y="1206"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="cyw-ZA-cHi">
+            <objects>
+                <splitViewController id="HO9-nt-AEZ" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="GLT-9H-I5w"/>
+                        <splitViewItem id="ouX-rT-jFn"/>
+                        <splitViewItem id="L1V-h6-gLQ"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="R9y-hS-Xbb">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </splitView>
+                    <connections>
+                        <segue destination="Nxw-Dx-j5k" kind="relationship" relationship="splitItems" id="O3L-qT-MUO"/>
+                        <segue destination="6s5-D2-0u5" kind="relationship" relationship="splitItems" id="xpB-os-1wc"/>
+                        <segue destination="W5L-0p-czd" kind="relationship" relationship="splitItems" id="4mH-C2-Lik"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="EXj-zp-Xka" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293" y="1163"/>
+        </scene>
+        <!--ToolBar-->
+        <scene sceneID="eDT-Fu-nAx">
+            <objects>
+                <controllerPlaceholder storyboardName="ToolBar" id="gzN-eu-Iyc" sceneMemberID="viewController"/>
+                <customObject id="jcp-P7-vII" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="107.5" y="939"/>
+        </scene>
+        <!--Sprites-->
+        <scene sceneID="Ik4-ET-RLk">
+            <objects>
+                <controllerPlaceholder storyboardName="Sprites" id="Nxw-Dx-j5k" sceneMemberID="viewController"/>
+                <customObject id="zKJ-Bz-UiM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="1095"/>
+        </scene>
+        <!--DrawView-->
+        <scene sceneID="xtD-oU-XMW">
+            <objects>
+                <controllerPlaceholder storyboardName="DrawView" id="6s5-D2-0u5" sceneMemberID="viewController"/>
+                <customObject id="TcB-ov-k1f" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735.5" y="1163"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="HmX-me-zBS">
+            <objects>
+                <controllerPlaceholder storyboardName="Settings" id="W5L-0p-czd" sceneMemberID="viewController"/>
+                <customObject id="yZZ-PC-hKL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730.5" y="1252"/>
+        </scene>
+        <!--Status-->
+        <scene sceneID="CMb-1R-pqv">
+            <objects>
+                <controllerPlaceholder storyboardName="Status" id="sec-kM-X0p" sceneMemberID="viewController"/>
+                <customObject id="HNS-ad-VNt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="107" y="1364"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="project_new" width="38.400001525878906" height="38.400001525878906"/>
-        <image name="project_save" width="102.40000152587891" height="102.40000152587891"/>
-    </resources>
 </document>

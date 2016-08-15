@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="xuH-x8-X7J">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <scenes>
+        <!--Status-->
+        <scene sceneID="9On-HA-A3G">
+            <objects>
+                <viewController title="Status" id="xuH-x8-X7J" sceneMemberID="viewController">
+                    <view key="view" id="Xsa-6a-rJu">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6oO-dm-u64">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="31.5"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="J4T-QV-Aev">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="f4q-f9-CQv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <splitViewItem id="vwX-HL-Blq"/>
+                <splitViewItem id="HGb-8p-htX"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="1580.75"/>
+        </scene>
+    </scenes>
+</document>

@@ -6,8 +6,12 @@
 //  Copyright © 2016 Dongyang.Cai. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
-class ToolBar : NSObject {
+class ToolBar: NSView {
+
+    @IBOutlet weak var btn_project_new: NSButton!;
+    @IBOutlet weak var btn_project_save: NSButton!;
+    
     
 }

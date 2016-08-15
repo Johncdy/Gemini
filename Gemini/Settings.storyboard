@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="fXU-2b-jUY">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="in4-qH-1YE">
+            <objects>
+                <viewController title="Settings" id="fXU-2b-jUY" sceneMemberID="viewController">
+                    <view key="view" id="vKi-Lm-u2f">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="649"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rqY-eo-emO">
+                                <rect key="frame" x="0.0" y="625" width="250" height="25"/>
+                                <buttonCell key="cell" type="roundTextured" title="Settings" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SPz-iT-rDV">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rqY-eo-emO" firstAttribute="centerX" secondItem="vKi-Lm-u2f" secondAttribute="centerX" id="TC1-8E-4jZ"/>
+                            <constraint firstItem="rqY-eo-emO" firstAttribute="leading" secondItem="vKi-Lm-u2f" secondAttribute="leading" id="cOj-Vp-VHd"/>
+                            <constraint firstItem="rqY-eo-emO" firstAttribute="top" secondItem="vKi-Lm-u2f" secondAttribute="top" id="cWf-fx-68U"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="gir-JV-4Ri" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855" y="1111.5"/>
+        </scene>
+    </scenes>
+</document>
