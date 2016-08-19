@@ -657,7 +657,9 @@
                         <rect key="contentRect" x="196" y="240" width="1024" height="720"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="minSize" type="size" width="1024" height="720"/>
+                        <value key="maxSize" type="size" width="1024" height="720"/>
                         <value key="minFullScreenContentSize" type="size" width="1024" height="720"/>
+                        <value key="maxFullScreenContentSize" type="size" width="1024" height="720"/>
                     </window>
                     <connections>
                         <segue destination="Qsj-JN-OTF" kind="relationship" relationship="window.shadowedContentViewController" id="JS7-ge-bTe"/>
