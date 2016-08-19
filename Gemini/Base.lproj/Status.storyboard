@@ -9,7 +9,7 @@
         <scene sceneID="9On-HA-A3G">
             <objects>
                 <viewController title="Status" id="xuH-x8-X7J" sceneMemberID="viewController">
-                    <view key="view" id="Xsa-6a-rJu">
+                    <view key="view" autoresizesSubviews="NO" id="Xsa-6a-rJu">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="32"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>

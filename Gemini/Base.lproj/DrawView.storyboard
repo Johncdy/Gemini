@@ -13,10 +13,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="524" height="649"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <openGLView identifier="openGLView" fixedFrame="YES" useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e4r-sB-VOg" customClass="CustomOpenGLView" customModule="Gemini" customModuleProvider="target">
+                            <openGLView identifier="openGLView" useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e4r-sB-VOg" customClass="CustomOpenGLView" customModule="Gemini" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="524" height="649"/>
                             </openGLView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="e4r-sB-VOg" firstAttribute="leading" secondItem="ih9-tE-ljp" secondAttribute="leading" id="3NP-0Z-187"/>
+                            <constraint firstAttribute="bottom" secondItem="e4r-sB-VOg" secondAttribute="bottom" id="AUZ-Fs-zYJ"/>
+                            <constraint firstItem="e4r-sB-VOg" firstAttribute="top" secondItem="ih9-tE-ljp" secondAttribute="top" id="GW8-9p-KWZ"/>
+                            <constraint firstAttribute="trailing" secondItem="e4r-sB-VOg" secondAttribute="trailing" id="xIh-gz-rp8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="CaP-rI-lvk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
